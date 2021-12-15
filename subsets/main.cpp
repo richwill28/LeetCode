@@ -12,6 +12,7 @@ private:
 public:
     // Backtracking solution
     // O(2^n) time and O(2^n) space complexity
+    // If we ignore the solution set, the size complexity is O(n) because at most n-size recursion stack and n-size copying list
     vector<vector<int>> subsets(vector<int>& nums) {
         sort(nums.begin(), nums.end()); // optional
         vector<vector<int>> solutionSet;
