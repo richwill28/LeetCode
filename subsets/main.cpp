@@ -19,4 +19,19 @@ public:
         backtrack(nums, solutionSet, tempSet, 0);
         return solutionSet;
     }
+
+    // Iterative solution
+    // O(2^n) time and O(2^n) space complexity
+    vector<vector<int>> subsets(vector<int>& nums) {
+        vector<vector<int>> solutionSet = {{}};
+        for (auto& num : nums) {
+            int n = solutionSet.size();
+            for (int i = 0; i < n; i++) {
+                vector<int> subset = {solutionSet[i]};
+                subset.push_back(num);
+                solutionSet.push_back(subset);
+            }
+        }
+        return solutionSet;
+    }
 };
