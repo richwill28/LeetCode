@@ -13,6 +13,7 @@ public:
     }
 
     // Turtoise and Hare (Floyd's cycle-finding algorithm)
+    // Applicable only if there is only one duplicate
     // O(n) time and O(1) space complexity
     // Without modifying input array
     int findDuplicate(vector<int>& nums) {
@@ -32,6 +33,7 @@ public:
     }
 
     // Pigeonhole principle
+    // Applicable only if there is only one duplicate
     // O(n^2) time and O(1) space complexity
     // Without modifying input array
     int findDuplicate(vector<int>& nums) {
