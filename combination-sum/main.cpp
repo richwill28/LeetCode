@@ -15,7 +15,7 @@ private:
 public:
     // Backtracking solution
     vector<vector<int>> combinationSum(vector<int>& candidates, int target) {
-        // sort(candidates.begin(), candidates.end()); // optional
+        sort(candidates.begin(), candidates.end()); // optional
         vector<vector<int>> solutionSet;
         vector<int> tempSet = {};
         backtrack(candidates, solutionSet, tempSet, target, 0);
