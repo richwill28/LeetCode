@@ -2,7 +2,7 @@ class Solution {
 private:
     void backtrack(vector<int>& candidates, vector<vector<int>>& solutionSet, vector<int>& tempSet, int remain, int start) {
         if (remain == 0) {
-            solutionSet.push_back(tempSet);
+            solutionSet.push_back(tempSet); // costs O(tempSet.size())
         } else if (remain > 0) {
             for (int i = start; i < candidates.size(); i++) {
                 tempSet.push_back(candidates[i]);
