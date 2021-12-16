@@ -14,6 +14,8 @@ private:
 
 public:
     // Backtracking solution
+    // Should be O(2^n) time and O(2^n) space complexity
+    // If we ignore the solution set, the size complexity is O(n) because at most n-size recursion stack and n-size copying list
     vector<vector<int>> combinationSum(vector<int>& candidates, int target) {
         sort(candidates.begin(), candidates.end()); // optional
         vector<vector<int>> solutionSet;
