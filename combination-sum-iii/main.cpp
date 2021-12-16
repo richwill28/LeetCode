@@ -14,7 +14,7 @@ private:
 
 public:
     // Backtracking solution
-    // Should be O(9^k) time and O(k) space complexity
+    // Should be O(k * 9^k) time and O(k) space complexity
     vector<vector<int>> combinationSum3(int k, int n) {
         vector<int> nums = {1, 2, 3, 4, 5, 6, 7, 8, 9};
         vector<vector<int>> solutionSet;
