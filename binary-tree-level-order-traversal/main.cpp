@@ -27,7 +27,7 @@ private:
 
 public:
     // BFS solution
-    // O(n log n) time and O(n) size complexity
+    // O(n) time and O(n) size complexity
     // Disregarding the solution array, the runtime size complexity is O(l) (where l = number of leaf nodes)
     // Therefore, best case = O(1) size and worst case = O(n/2) size
     vector<vector<int>> levelOrder(TreeNode* root) {
@@ -62,7 +62,7 @@ public:
     }
 
     // DFS solution
-    // O(n log n) time and O(n) size complexity
+    // O(n) time and O(n) size complexity
     // Disregarding the solution array, the runtime size complexity is O(r) (where r = number of recursion stack)
     // Therefore, best case = O(log n) size and worst case = O(n) size
     vector<vector<int>> levelOrder(TreeNode* root) {
