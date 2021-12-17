@@ -58,7 +58,7 @@ public:
             solution.push_back(level);
         }
 
-        return levels;
+        return solution;
     }
 
     // DFS solution
