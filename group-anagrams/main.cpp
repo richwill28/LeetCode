@@ -1,7 +1,7 @@
 class Solution {
 public:
-    // O(a * n) time complexity, where a = 665
-    // O(n) size complexity
+    // O(a * n) time complexity, where a = str.size() * log(str.size())
+    // O(n) space complexity
     vector<vector<string>> groupAnagrams(vector<string>& strs) {
         unordered_map<string, int> hashMap; // map = {sorted string, index}
         int index = 0;

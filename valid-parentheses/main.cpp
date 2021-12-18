@@ -1,6 +1,6 @@
 class Solution {
 public:
-    // O(n) time and O(n) size complexity
+    // O(n) time and O(n) space complexity
     bool isValid(string s) {
         stack<char> st;
         for (int i = 0; i < s.size(); i++) {

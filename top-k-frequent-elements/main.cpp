@@ -41,7 +41,7 @@ private:
 
 public:
     // Using max heap
-    // O(n log n) time and O(n + n) size complexity
+    // O(n log n) time and O(n + n) space complexity
     vector<int> topKFrequent(vector<int>& nums, int k) {
         unordered_map<int, int> hashMap;
         for (auto& num : nums) {    // costs O(n)
@@ -63,7 +63,7 @@ public:
     }
 
     // Using min heap (slightly more efficient)
-    // O(n log k) time and O(n + k) size complexity
+    // O(n log k) time and O(n + k) space complexity
     // Actually, O(n log k) == O(n log n) because k <= n
     // To achieve true O(n log k), we can consider k == n input and terminate early
     vector<int> topKFrequent(vector<int>& nums, int k) {
@@ -91,7 +91,7 @@ public:
 
     // Using quick select
     // Average O(n) and worst-case O(n^2) time complexity
-    // O(n) size complexity
+    // O(n) space complexity
     vector<int> topKFrequent(vector<int>& nums, int k) {
         unordered_map<int, int> hashMap;
         for (auto& num : nums) {    // costs O(n)
@@ -112,7 +112,7 @@ public:
     }
 
     // Using bucket sort
-    // O(n) time and O(n) size complexity
+    // O(n) time and O(n) space complexity
     vector<int> topKFrequent(vector<int>& nums, int k) {
         unordered_map<int, int> hashMap;
         for (auto& num : nums) {    // costs O(n)

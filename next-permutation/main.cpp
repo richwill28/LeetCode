@@ -1,6 +1,6 @@
 class Solution {
 public:
-    // O(n) time and O(1) size complexity
+    // O(n) time and O(1) space complexity
     void nextPermutation(vector<int>& nums) {
         int k;
         for (k = nums.size() - 2; k >= 0; k--) {

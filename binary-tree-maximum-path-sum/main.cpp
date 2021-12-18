@@ -12,9 +12,9 @@
 class Solution {
 private:
     // DFS solution
-    // O(n) time and O(n) size complexity
-    // Actually, the runtime size complexity is O(r) (where r = number of recursion stack)
-    // Therefore, best case = O(log n) size and worst case = O(n) size
+    // O(n) time and O(n) space complexity
+    // Actually, the runtime space complexity is O(r) (where r = number of recursion stack)
+    // Therefore, best case = O(log n) space and worst case = O(n) space
     int recursiveMaxPathSum(int& globalMax, TreeNode* root, int depth) {
         if (root == nullptr) {
             return INT_MIN;
